@@ -12,12 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <section class="home">
       <img
         src="/images/moisesmartinezliranzo.jpeg"
+        class="profile"
         alt="Moises Martinez Liranzo Picture"
       />
       <h2>
@@ -26,10 +28,18 @@
         Liranzo
       </h2>
       <h3>Front-End Developer</h3>
+
+      <div>
+        <img
+          src="/images/arrow_downward_black_24dp.svg"
+          class="scroll-downs-image"
+          alt=""
+        />
+      </div>
     </section>
 
     <section class="resume">
-      <h2>Titulo</h2>
+      <h2 class="title">Experiencia</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
         consectetur aspernatur quibusdam esse, architecto a voluptatum inventore
@@ -38,8 +48,29 @@
       </p>
     </section>
 
-    <section class="project">
-      <h2>Projectos</h2>
+    <section class="projects">
+      <h2 class="title">Projectos Realizados</h2>
+
+      <div class="project">
+        <img src="https://intelleon.ai/img/pp.png" alt="" />
+        <div class="project-info">
+          <h3>Titulo</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            alias ad dolores a nostrum repudiandae pariatur cupiditate
+            reiciendis ratione distinctio non totam esse
+          </p>
+          <span class="tools"> html, css, javascript, reactjs </span>
+          <a
+            href="http://www.projects.com"
+            target="_blank"
+            title="project.com website"
+            >www.projects.com</a
+          >
+        </div>
+
+        <div class="project-image"></div>
+      </div>
     </section>
   </body>
 </html>
