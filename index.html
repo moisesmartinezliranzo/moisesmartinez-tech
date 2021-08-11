@@ -16,29 +16,31 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <section class="home">
-      <img
-        src="/images/moisesmartinezliranzo.jpeg"
-        class="profile"
-        alt="Moises Martinez Liranzo Picture"
-      />
-      <h2>
-        Moises <br />
-        Martinez <br />
-        Liranzo
-      </h2>
-      <h3>Front-End Developer</h3>
-
+    <section class="home animate">
       <div>
         <img
-          src="/images/arrow_downward_black_24dp.svg"
-          class="scroll-downs-image"
-          alt=""
+          src="/images/moisesmartinezliranzo.jpeg"
+          class="profile"
+          alt="Moises Martinez Liranzo Picture"
         />
+        <h2>
+          Moises <br />
+          Martinez <br />
+          Liranzo
+        </h2>
+        <h3>Front-End Developer</h3>
+
+        <div>
+          <img
+            src="/images/arrow_downward_black_24dp.svg"
+            class="scroll-downs-image"
+            alt=""
+          />
+        </div>
       </div>
     </section>
 
-    <section class="resume">
+    <section class="resume animate">
       <h2 class="title">Experiencia</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
@@ -51,8 +53,8 @@
     <section class="projects">
       <h2 class="title">Projectos Realizados</h2>
 
-      <div class="project">
-        <img src="https://intelleon.ai/img/pp.png" alt="" />
+      <div class="project p1 animate">
+        <img src="./images/project-1.png" alt="" />
         <div class="project-info">
           <h3>Titulo</h3>
           <p>
@@ -62,15 +64,86 @@
           </p>
           <span class="tools"> html, css, javascript, reactjs </span>
           <a
-            href="http://www.projects.com"
+            href="http://www.moisesmartinez.tech"
             target="_blank"
             title="project.com website"
             >www.projects.com</a
           >
         </div>
+      </div>
 
-        <div class="project-image"></div>
+      <div class="project p2 animate">
+        <img src="./images/project-2.png" alt="" />
+        <div class="project-info">
+          <h3>Titulo del proyecto</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            alias ad dolores a nostrum repudiandae pariatur cupiditate
+            reiciendis ratione distinctio non totam esse
+          </p>
+          <span class="tools"> html, css, javascript, reactjs </span>
+          <a
+            href="http://www.moisesmartinez.tech"
+            target="_blank"
+            title="project.com website"
+            >www.projects.com</a
+          >
+        </div>
+      </div>
+
+      <div class="project p3 animate">
+        <img src="./images/project-1.png" alt="" />
+        <div class="project-info">
+          <h3>Titulo del proyecto</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+            alias ad dolores a nostrum repudiandae pariatur cupiditate
+            reiciendis ratione distinctio non totam esse
+          </p>
+          <span class="tools"> html, css, javascript, reactjs </span>
+          <a
+            href="http://www.moisesmartinez.tech"
+            target="_blank"
+            title="project.com website"
+            >www.projects.com</a
+          >
+        </div>
       </div>
     </section>
+
+    <section class="contact-prompt animate">
+      <h2 class="title">Contact Prompt</h2>
+
+      <div class="promt">
+        <div class="promt-bar">
+          <span class="close"></span>
+          <span class="minimize"></span>
+          <span class="expand"></span>
+        </div>
+
+        <div class="promt-input-area" id="promt-area">
+          <p>Last login: Mon Aug 9 16:20:17 on ttys003</p>
+          <div>
+            <!-- <p>mmartinez@website ~ %</p> -->
+            <div contenteditable="true" id="text-area"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info animate">
+      <h2 class="title">contact@moisesmartinez.tech</h2>
+
+      <div>
+        <p>2021 Todos los derechos reservados</p>
+
+        <ul>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
   </body>
 </html>

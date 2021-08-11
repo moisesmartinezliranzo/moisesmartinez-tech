@@ -34,8 +34,6 @@ body {
   text-transform: uppercase;
   font-size: 3rem;
   line-height: 3rem;
-  /* -webkit-text-stroke: 1px #d2d2d2;
-  color: transparent; */
   font-weight: 800;
   margin-bottom: 4rem;
 }
@@ -54,10 +52,13 @@ body {
 
 .resume h2 {
   text-transform: uppercase;
-  font-size: 2rem;
-  line-height: 2rem;
   font-weight: 800;
   margin-bottom: 4rem;
+}
+
+.resume p {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 /* Projects */
@@ -70,16 +71,27 @@ body {
 }
 
 .projects .project {
-  background-color: #2b239c;
   color: #fff;
   padding: 4rem 1rem;
   margin-bottom: 1rem;
   overflow: hidden;
 }
 
+.projects .project.p1 {
+  background-color: #2b239c;
+}
+
+.projects .project.p2 {
+  background-color: #607d8b;
+}
+
+.projects .project.p3 {
+  background-color: #009688;
+}
+
 .projects .project img {
   position: relative;
-  right: -1rem;
+  right: -3rem;
   overflow: hidden;
   width: 100%;
 }
@@ -95,17 +107,219 @@ body {
 }
 
 .projects .project .project-info p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   line-height: 1.5rem;
 }
 
 .projects .project .project-info span,
 .projects .project .project-info a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: block;
 }
 
 .projects .project .project-info a {
   color: #fff;
+}
+
+.contact-prompt {
+  padding: 4rem 1rem;
+}
+
+.contact-prompt .promt {
+  border: #333135 solid 1px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-height: 230px;
+  background-color: #1c1c1c;
+}
+
+.contact-prompt .promt .promt-bar {
+  background-color: #333135;
+  padding: 0.7rem;
+}
+
+.contact-prompt .promt .promt-bar span {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.4rem;
+  display: inline-block;
+}
+
+.contact-prompt .promt .promt-bar .close {
+  background-color: #fb574f;
+}
+
+.contact-prompt .promt .promt-bar .minimize {
+  background-color: #f8b735;
+}
+
+.contact-prompt .promt .promt-bar .expand {
+  background-color: #1ac33f;
+}
+
+.contact-prompt .promt .promt-input-area {
+  padding: 0.25rem;
+  color: #00ff33;
+  font-size: 0.8rem;
+}
+
+.contact-prompt .promt .promt-input-area p {
+  margin: 0.1rem 0;
+  padding: 0;
+}
+
+#text-area::before {
+  content: "mmartinez@website ~ % ";
+}
+
+.info {
+  padding: 4rem 1rem;
+}
+
+.info .title {
+  font-size: 1rem;
+}
+
+.info > div {
+  font-size: 0.8rem;
+}
+
+.info > div a {
+  color: #fff;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .home h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .home h3 {
+    font-size: 2rem;
+  }
+
+  .home img.profile {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .resume p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .projects .project img {
+    right: -10rem;
+  }
+
+  .projects .project .project-info h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .projects .project .project-info p {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .projects .project .project-info span,
+  .projects .project .project-info a {
+    font-size: 1.5rem;
+  }
+
+  .contact-prompt .promt .promt-input-area {
+    font-size: 1rem;
+  }
+
+  .info .title {
+    font-size: 2.5rem;
+  }
+
+  .info > div {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  section {
+    width: 992px;
+    margin: 0 auto;
+  }
+
+  .home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects .project {
+    border-radius: 1rem;
+  }
+
+  .projects h2 {
+    padding: 0 0;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  section {
+    width: 1100px;
+  }
+
+  .projects .project {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .projects .project .project-info {
+    width: 55%;
+    margin-top: 0;
+  }
+
+  .projects .project img {
+    width: 45%;
+    height: 100%;
+    right: -5rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  section {
+    width: 1350px;
+  }
+
+  .projects .project {
+    margin-bottom: 4rem;
+    padding: 4rem 2rem;
+  }
+
+  .projects .project:last-child {
+    margin-bottom: 0;
+  }
 }
