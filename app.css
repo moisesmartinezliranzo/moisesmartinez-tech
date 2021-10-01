@@ -89,6 +89,10 @@ body {
   background-color: #009688;
 }
 
+.projects .project.p4 {
+  background-color: #ff9800;
+}
+
 .projects .project img {
   position: relative;
   right: -3rem;
